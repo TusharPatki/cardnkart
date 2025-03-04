@@ -34,10 +34,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="bg-[#2549E8] overflow-hidden min-h-screen flex flex-col items-center justify-between py-20 px-4 relative">
+    <section className="bg-[#2549E8] overflow-hidden min-h-screen flex flex-col items-center justify-center py-10 px-4 relative">
       {/* Background Design Elements removed */}
       
-      <div className="container mx-auto flex flex-col items-center text-center z-10 max-w-5xl pt-10 md:pt-16">
+      <div className="container mx-auto flex flex-col items-center text-center z-10 max-w-5xl">
         {/* Main Heading */}
         <h1 
           ref={headingRef}
@@ -51,7 +51,7 @@ const Hero = () => {
         {/* Subheading */}
         <p 
           ref={subheadingRef}
-          className="text-[#8EFF8B] text-xl md:text-3xl lg:text-4xl mb-12 slide-up font-display font-semibold"
+          className="text-[#8EFF8B] text-xl md:text-3xl lg:text-4xl mb-8 slide-up font-display font-semibold"
           style={{ animationDelay: '0.2s' }}
         >
           NO CREDIT CARD REQUIRED
@@ -60,7 +60,7 @@ const Hero = () => {
         {/* Download Button */}
         <button 
           ref={buttonRef}
-          className="bg-black text-white font-medium py-3 px-8 rounded-full flex items-center hover:bg-gray-900 transition-all transform hover:scale-105 shadow-lg slide-up mb-12"
+          className="bg-black text-white font-medium py-3 px-8 rounded-full flex items-center hover:bg-gray-900 transition-all transform hover:scale-105 shadow-lg slide-up mb-8"
           style={{ animationDelay: '0.4s' }}
         >
           <span>Download App</span>
@@ -70,13 +70,13 @@ const Hero = () => {
         {/* Phone Mockup - Updated with new image */}
         <div 
           ref={phoneRef}
-          className="w-full max-w-md md:max-w-lg mt-6 fade-in"
+          className="w-full fade-in mt-4"
           style={{ animationDelay: '0.6s' }}
         >
           <img 
             src="/lovable-uploads/a2fcc59f-9a9c-4d30-984a-85837e586d09.png" 
             alt="Shopping App Mockup" 
-            className="w-full h-auto rounded-3xl shadow-2xl"
+            className="w-full h-auto object-contain max-h-[calc(100vh-500px)] md:max-h-[calc(100vh-400px)]"
           />
         </div>
       </div>
