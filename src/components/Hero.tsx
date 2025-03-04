@@ -3,10 +3,10 @@ import { useEffect, useRef } from 'react';
 import { Download } from 'lucide-react';
 
 const Hero = () => {
-  const phoneRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
   const subheadingRef = useRef<HTMLParagraphElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+  const phoneRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -20,74 +20,81 @@ const Hero = () => {
       { threshold: 0.1 }
     );
 
-    if (phoneRef.current) observer.observe(phoneRef.current);
     if (headingRef.current) observer.observe(headingRef.current);
     if (subheadingRef.current) observer.observe(subheadingRef.current);
     if (buttonRef.current) observer.observe(buttonRef.current);
+    if (phoneRef.current) observer.observe(phoneRef.current);
 
     return () => {
-      if (phoneRef.current) observer.unobserve(phoneRef.current);
       if (headingRef.current) observer.unobserve(headingRef.current);
       if (subheadingRef.current) observer.unobserve(subheadingRef.current);
       if (buttonRef.current) observer.unobserve(buttonRef.current);
+      if (phoneRef.current) observer.unobserve(phoneRef.current);
     };
   }, []);
 
   return (
-    <section className="relative bg-gradient-to-br from-blue-600 to-blue-800 overflow-hidden min-h-screen pt-20">
+    <section className="bg-[#2549E8] overflow-hidden min-h-screen flex flex-col items-center justify-between py-20 px-4 relative">
       {/* Background Design Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-500 rounded-full opacity-20"></div>
-        <div className="absolute top-1/2 -left-48 w-96 h-96 bg-blue-400 rounded-full opacity-10"></div>
-        <div className="absolute bottom-0 right-0 w-full h-1/3 bg-gradient-to-t from-blue-900/30 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-1/3 h-1/3">
+          <img 
+            src="/lovable-uploads/16a5816b-7f69-4018-a5dc-aeb191ba6639.png" 
+            alt="Decorative Element" 
+            className="w-full h-full object-contain opacity-80"
+          />
+        </div>
+        <div className="absolute bottom-0 right-0 w-1/3 h-1/3">
+          <div className="w-full h-full bg-[#4a65e8] rounded-tl-[100%] opacity-50"></div>
+        </div>
       </div>
       
-      <div className="container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center justify-between relative z-10">
-        {/* Left Content */}
-        <div className="w-full lg:w-1/2 text-white mb-12 lg:mb-0">
-          <h1 
-            ref={headingRef}
-            className="font-display font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 tracking-tight slide-up leading-tight"
-          >
-            SAVE MONEY<br />
-            ON YOUR<br />
-            SHOPPING
-          </h1>
-          
-          <p 
-            ref={subheadingRef}
-            className="text-green-300 text-2xl md:text-3xl mb-10 max-w-lg slide-up font-semibold"
-            style={{ animationDelay: '0.2s' }}
-          >
-            SHOP SMARTER, NOT HARDER
-          </p>
-          
-          <button 
-            ref={buttonRef}
-            className="bg-white text-blue-700 font-medium py-4 px-8 rounded-full flex items-center hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg slide-up"
-            style={{ animationDelay: '0.4s' }}
-          >
-            <span>Download Now</span>
-            <Download className="ml-2" size={20} />
-          </button>
-        </div>
+      <div className="container mx-auto flex flex-col items-center text-center z-10 max-w-5xl pt-10 md:pt-16">
+        {/* Main Heading */}
+        <h1 
+          ref={headingRef}
+          className="font-display font-extrabold text-5xl md:text-7xl lg:text-8xl mb-6 text-white slide-up tracking-tight leading-tight"
+        >
+          SAVE BIG<br />
+          ON ONLINE<br />
+          SHOPPING
+        </h1>
         
-        {/* Right Content - Phone */}
+        {/* Subheading */}
+        <p 
+          ref={subheadingRef}
+          className="text-[#8EFF8B] text-xl md:text-3xl lg:text-4xl mb-12 slide-up font-display font-semibold"
+          style={{ animationDelay: '0.2s' }}
+        >
+          NO CREDIT CARD REQUIRED
+        </p>
+        
+        {/* Download Button */}
+        <button 
+          ref={buttonRef}
+          className="bg-black text-white font-medium py-3 px-8 rounded-full flex items-center hover:bg-gray-900 transition-all transform hover:scale-105 shadow-lg slide-up mb-12"
+          style={{ animationDelay: '0.4s' }}
+        >
+          <span>Download App</span>
+          <Download className="ml-2" size={20} />
+        </button>
+        
+        {/* Phone Mockup */}
         <div 
           ref={phoneRef}
-          className="w-full lg:w-1/2 flex justify-center fade-in"
+          className="w-full max-w-xs md:max-w-sm mt-6 fade-in"
           style={{ animationDelay: '0.6s' }}
         >
-          <div className="relative w-80 md:w-96">
+          <div className="relative">
             <div className="absolute inset-0 bg-black/20 rounded-[40px] blur-xl transform scale-105"></div>
-            <div className="relative bg-white rounded-[40px] overflow-hidden shadow-2xl border-8 border-gray-800">
+            <div className="relative bg-white rounded-[40px] overflow-hidden shadow-2xl border-8 border-black">
               <div className="relative w-full">
-                <div className="absolute top-0 left-0 right-0 h-6 bg-gray-800 rounded-t-3xl flex items-center justify-center">
+                <div className="absolute top-0 left-0 right-0 h-6 bg-black rounded-t-3xl flex items-center justify-center">
                   <div className="w-20 h-4 bg-black rounded-b-xl"></div>
                 </div>
                 <img 
-                  src="/lovable-uploads/790d9d42-8391-414f-93a4-146410fbd1f2.png" 
-                  alt="Cart n Card App" 
+                  src="/lovable-uploads/16a5816b-7f69-4018-a5dc-aeb191ba6639.png" 
+                  alt="App Screenshot" 
                   className="w-full"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
@@ -95,31 +102,6 @@ const Hero = () => {
                   }}
                 />
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      {/* Floating Elements */}
-      <div className="absolute top-40 right-1/4 animate-float hidden lg:block">
-        <div className="bg-white/10 backdrop-blur-lg p-3 rounded-xl shadow-lg">
-          <div className="flex items-center gap-3">
-            <div className="bg-green-500 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold">$</div>
-            <div className="text-white">
-              <div className="text-xs font-medium opacity-80">Saved</div>
-              <div className="font-bold">$42.99</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div className="absolute bottom-32 left-1/4 animate-float hidden lg:block" style={{ animationDelay: '1s' }}>
-        <div className="bg-white/10 backdrop-blur-lg p-3 rounded-xl shadow-lg">
-          <div className="flex items-center gap-3">
-            <div className="bg-orange-500 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold">%</div>
-            <div className="text-white">
-              <div className="text-xs font-medium opacity-80">Discount</div>
-              <div className="font-bold">25% OFF</div>
             </div>
           </div>
         </div>
