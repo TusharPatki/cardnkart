@@ -62,7 +62,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen overflow-hidden pt-24">
+    <div className="min-h-screen overflow-hidden">
       <Navbar />
       <Hero />
       <Benefits />

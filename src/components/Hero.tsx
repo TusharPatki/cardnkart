@@ -35,7 +35,32 @@ const Hero = () => {
 
   return (
     <section className="bg-[#2549E8] overflow-hidden min-h-screen flex flex-col items-center justify-center py-10 px-4 relative">
-      {/* Background Design Elements removed */}
+      {/* Design Elements */}
+      <div className="absolute left-0 bottom-0 w-[300px] md:w-[400px] z-0 pointer-events-none">
+        <img 
+          src="/lovable-uploads/549a10ef-11a6-4047-953c-0549fa1e8a4a.png" 
+          alt="Blue Fluid Shape" 
+          className="w-full h-auto animate-float"
+        />
+      </div>
+      
+      <div className="absolute right-0 bottom-0 w-[300px] md:w-[400px] z-0 pointer-events-none">
+        <img 
+          src="/lovable-uploads/928aaac5-820f-45be-a148-704b093b6604.png" 
+          alt="Pink Blue Shape" 
+          className="w-full h-auto animate-float"
+          style={{ animationDelay: '1s' }}
+        />
+      </div>
+      
+      <div className="absolute top-20 right-10 w-[100px] md:w-[150px] z-0 pointer-events-none">
+        <img 
+          src="/lovable-uploads/a89b1dc2-0888-4634-a227-5380670b72cf.png" 
+          alt="Percentage Symbol" 
+          className="w-full h-auto animate-float"
+          style={{ animationDelay: '1.5s' }}
+        />
+      </div>
       
       <div className="container mx-auto flex flex-col items-center text-center z-10 max-w-5xl">
         {/* Main Heading */}
@@ -69,7 +94,7 @@ const Hero = () => {
         
         {/* App Screenshot Image */}
         <div 
-          className="w-full max-w-lg mx-auto slide-up"
+          className="w-full max-w-lg mx-auto slide-up relative z-10"
           style={{ animationDelay: '0.6s' }}
         >
           <img
