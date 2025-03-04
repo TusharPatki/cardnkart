@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+                cardnbg: {
+                    blue: '#2549E8',
+                    darkBlue: '#0A1232',
+                    yellow: '#FFD700',
+                }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +90,36 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'float': {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-10px)' }
+                },
+                'fadeIn': {
+                    from: { opacity: '0' },
+                    to: { opacity: '1' }
+                },
+                'slideUp': {
+                    from: { transform: 'translateY(20px)', opacity: '0' },
+                    to: { transform: 'translateY(0)', opacity: '1' }
+                },
+                'pulse': {
+                    '0%, 100%': { transform: 'scale(1)' },
+                    '50%': { transform: 'scale(1.05)' }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'float': 'float 6s ease-in-out infinite',
+                'fadeIn': 'fadeIn 0.7s ease-in forwards',
+                'slideUp': 'slideUp 0.7s ease-out forwards',
+                'pulse': 'pulse 2s ease-in-out infinite'
+			},
+            fontFamily: {
+                'sans': ['Inter', 'sans-serif'],
+                'display': ['Montserrat', 'sans-serif']
+            }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
