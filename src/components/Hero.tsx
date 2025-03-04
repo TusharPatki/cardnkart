@@ -35,19 +35,7 @@ const Hero = () => {
 
   return (
     <section className="bg-[#2549E8] overflow-hidden min-h-screen flex flex-col items-center justify-between py-20 px-4 relative">
-      {/* Background Design Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute bottom-0 left-0 w-1/3 h-1/3">
-          <img 
-            src="/lovable-uploads/16a5816b-7f69-4018-a5dc-aeb191ba6639.png" 
-            alt="Decorative Element" 
-            className="w-full h-full object-contain opacity-80"
-          />
-        </div>
-        <div className="absolute bottom-0 right-0 w-1/3 h-1/3">
-          <div className="w-full h-full bg-[#4a65e8] rounded-tl-[100%] opacity-50"></div>
-        </div>
-      </div>
+      {/* Background Design Elements removed */}
       
       <div className="container mx-auto flex flex-col items-center text-center z-10 max-w-5xl pt-10 md:pt-16">
         {/* Main Heading */}
