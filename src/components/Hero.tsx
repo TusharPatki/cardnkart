@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { Download } from 'lucide-react';
 
@@ -82,15 +81,14 @@ const Hero = () => {
           NO CREDIT CARD REQUIRED
         </p>
         
-        {/* Download Button */}
-        <button 
+        {/* Coming Soon Button (replacing Download Button) */}
+        <div 
           ref={buttonRef}
-          className="bg-black text-white font-medium py-3 px-8 rounded-full flex items-center hover:bg-gray-900 transition-all transform hover:scale-105 shadow-lg slide-up mb-10"
+          className="bg-black text-white font-medium py-3 px-8 rounded-full inline-block hover:bg-gray-900 transition-all transform hover:scale-105 shadow-lg slide-up mb-10"
           style={{ animationDelay: '0.4s' }}
         >
-          <span>Download App</span>
-          <Download className="ml-2" size={20} />
-        </button>
+          <span className="text-cardnbg-yellow font-semibold">Coming soon</span>
+        </div>
         
         {/* App Screenshot Image */}
         <div 
