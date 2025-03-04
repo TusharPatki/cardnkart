@@ -15,7 +15,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children, title, subtitle, full
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <div className="flex-grow pt-32 pb-16">
+      <div className="flex-grow pt-24 pb-16">
         <div className={fullWidth ? 'w-full' : 'container mx-auto px-4'}>
           {!fullWidth && (
             <header className="text-center mb-12">

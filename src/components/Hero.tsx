@@ -34,7 +34,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="bg-[#2549E8] overflow-hidden min-h-screen flex flex-col items-center justify-center py-10 px-4 relative">
+    <section className="bg-[#2549E8] overflow-hidden min-h-screen flex flex-col items-center justify-center py-10 px-4 relative pt-24 md:pt-32">
       {/* Design Elements */}
       <div className="absolute left-0 bottom-0 w-[300px] md:w-[400px] z-0 pointer-events-none">
         <img 
@@ -62,7 +62,7 @@ const Hero = () => {
         />
       </div>
       
-      <div className="container mx-auto flex flex-col items-center text-center z-10 max-w-5xl">
+      <div className="container mx-auto flex flex-col items-center text-center z-10 max-w-5xl mt-16 md:mt-8">
         {/* Main Heading */}
         <h1 
           ref={headingRef}
