@@ -32,7 +32,7 @@ const AppDownload = () => {
   return (
     <section 
       ref={sectionRef}
-      className="py-20 bg-blue-600 text-white relative overflow-hidden"
+      className="py-20 bg-cardnbg-blue text-white relative overflow-hidden"
     >
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-300 rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/4"></div>
