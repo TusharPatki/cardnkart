@@ -67,31 +67,17 @@ const Hero = () => {
           <Download className="ml-2" size={20} />
         </button>
         
-        {/* Phone Mockup */}
+        {/* Phone Mockup - Replacing with the new image */}
         <div 
           ref={phoneRef}
-          className="w-full max-w-xs md:max-w-sm mt-6 fade-in"
+          className="w-full max-w-md md:max-w-lg mt-6 fade-in"
           style={{ animationDelay: '0.6s' }}
         >
-          <div className="relative">
-            <div className="absolute inset-0 bg-black/20 rounded-[40px] blur-xl transform scale-105"></div>
-            <div className="relative bg-white rounded-[40px] overflow-hidden shadow-2xl border-8 border-black">
-              <div className="relative w-full">
-                <div className="absolute top-0 left-0 right-0 h-6 bg-black rounded-t-3xl flex items-center justify-center">
-                  <div className="w-20 h-4 bg-black rounded-b-xl"></div>
-                </div>
-                <img 
-                  src="/lovable-uploads/16a5816b-7f69-4018-a5dc-aeb191ba6639.png" 
-                  alt="App Screenshot" 
-                  className="w-full"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2hvcHBpbmclMjBhcHB8ZW58MHx8MHx8fDA%3D";
-                  }}
-                />
-              </div>
-            </div>
-          </div>
+          <img 
+            src="/lovable-uploads/cdc753dd-75c1-44a3-b3f8-967356eb87f4.png" 
+            alt="Shopping App Mockup" 
+            className="w-full h-auto rounded-3xl shadow-2xl"
+          />
         </div>
       </div>
     </section>
