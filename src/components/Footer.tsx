@@ -23,31 +23,20 @@ const Footer = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 gap-8">
             <div className="text-center md:text-left">
               <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2">
                 <li><Link to="/about-us" className="text-blue-200 hover:text-white transition-colors">About Us</Link></li>
-                <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Careers</a></li>
               </ul>
             </div>
             
             <div className="text-center md:text-left">
               <h4 className="font-semibold mb-4">Support</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Help Center</a></li>
                 <li><Link to="/contact-us" className="text-blue-200 hover:text-white transition-colors">Contact Us</Link></li>
                 <li><Link to="/privacy-policy" className="text-blue-200 hover:text-white transition-colors">Privacy Policy</Link></li>
                 <li><Link to="/terms-of-service" className="text-blue-200 hover:text-white transition-colors">Terms of Service</Link></li>
-              </ul>
-            </div>
-            
-            <div className="text-center md:text-left col-span-2 md:col-span-1">
-              <h4 className="font-semibold mb-4">Download</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-blue-200 hover:text-white transition-colors">iOS App</a></li>
-                <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Android App</a></li>
-                <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Browser Extension</a></li>
               </ul>
             </div>
           </div>
