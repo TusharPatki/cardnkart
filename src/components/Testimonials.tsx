@@ -4,6 +4,7 @@ import { Star } from 'lucide-react';
 
 const Testimonials = () => {
   const titleRef = useRef<HTMLDivElement>(null);
+  const subtitleRef = useRef<HTMLParagraphElement>(null);
   const testimonialsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -19,10 +20,12 @@ const Testimonials = () => {
     );
 
     if (titleRef.current) observer.observe(titleRef.current);
+    if (subtitleRef.current) observer.observe(subtitleRef.current);
     if (testimonialsRef.current) observer.observe(testimonialsRef.current);
 
     return () => {
       if (titleRef.current) observer.unobserve(titleRef.current);
+      if (subtitleRef.current) observer.unobserve(subtitleRef.current);
       if (testimonialsRef.current) observer.unobserve(testimonialsRef.current);
     };
   }, []);
@@ -50,13 +53,37 @@ const Testimonials = () => {
 
   return (
     <section id="testimonials" className="py-20 bg-cardnbg-blue text-white relative before:absolute before:inset-0 before:bg-white/5 before:backdrop-blur-lg">
+      {/* Decorative Elements */}
+      <div className="absolute bottom-0 left-0 w-[200px] md:w-[300px] lg:w-[400px] opacity-90">
+        <img 
+          src="/lovable-uploads/145a9f63-8061-423b-84ff-c5b2396729bf.png" 
+          alt="3D Curved Shape" 
+          className="w-full h-auto transform -scale-x-100"
+        />
+      </div>
+      
+      <div className="absolute bottom-0 right-0 w-[150px] md:w-[200px] opacity-70">
+        <img 
+          src="/lovable-uploads/e1a78bfb-8def-4941-aac2-2299d2475749.png" 
+          alt="3D Cube Shape" 
+          className="w-full h-auto"
+        />
+      </div>
+      
       <div className="container mx-auto px-4 relative z-10">
         <div 
           ref={titleRef}
-          className="text-center mb-16 slide-up"
+          className="text-center mb-4 slide-up"
         >
-          <h2 className="text-blue-100 font-medium text-lg mb-3">Testimonials</h2>
-          <h3 className="font-display font-bold text-3xl md:text-4xl">Join Thousands of Satisfied Customers</h3>
+          <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl">Join Thousands of Satisfied Customers</h2>
+        </div>
+        
+        <div 
+          ref={subtitleRef}
+          className="text-center mb-16 slide-up"
+          style={{ animationDelay: '0.2s' }}
+        >
+          <p className="text-lg md:text-xl text-blue-100">Hear what our customers have to say about their experience with CardnCart.</p>
         </div>
         
         <div 
