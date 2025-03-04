@@ -49,8 +49,8 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-cardnbg-blue text-white">
-      <div className="container mx-auto px-4">
+    <section id="testimonials" className="py-20 bg-cardnbg-blue text-white relative before:absolute before:inset-0 before:bg-white/5 before:backdrop-blur-lg">
+      <div className="container mx-auto px-4 relative z-10">
         <div 
           ref={titleRef}
           className="text-center mb-16 slide-up"
@@ -65,22 +65,25 @@ const Testimonials = () => {
           style={{ animationDelay: '0.3s' }}
         >
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white rounded-xl p-6 shadow-lg card-hover">
+            <div 
+              key={index} 
+              className="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/20 card-hover"
+            >
               <div className="flex items-center mb-4 space-x-1">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="fill-current text-cardnbg-yellow" size={16} />
                 ))}
               </div>
-              <p className="text-gray-800 mb-6 italic">"{testimonial.quote}"</p>
+              <p className="text-white mb-6 italic">"{testimonial.quote}"</p>
               <div className="flex items-center">
                 <img
                   src={testimonial.avatar}
                   alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover mr-4"
+                  className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-white/30"
                 />
                 <div>
-                  <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-600">{testimonial.location}</p>
+                  <h4 className="font-semibold text-white">{testimonial.name}</h4>
+                  <p className="text-sm text-blue-100">{testimonial.location}</p>
                 </div>
               </div>
             </div>

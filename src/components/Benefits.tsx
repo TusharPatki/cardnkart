@@ -32,11 +32,11 @@ const Benefits = () => {
   }, []);
 
   return (
-    <div className="bg-[#2549E8] py-16">
+    <div className="bg-[#2549E8] py-16 relative before:absolute before:inset-0 before:bg-white/5 before:backdrop-blur-lg">
       <section 
         id="benefits" 
         ref={sectionRef}
-        className="py-16 bg-[#2549E8] text-white relative overflow-hidden rounded-3xl max-w-6xl mx-auto my-0 px-6 md:px-10"
+        className="py-16 bg-transparent text-white relative overflow-hidden rounded-3xl max-w-6xl mx-auto my-0 px-6 md:px-10 z-10"
       >
         {/* Border effect */}
         <div className="absolute inset-0 border-2 border-[#8EFF8B] rounded-3xl opacity-50"></div>
@@ -54,7 +54,7 @@ const Benefits = () => {
           style={{ animationDelay: '0.3s' }}
         >
           {/* Benefit 1 */}
-          <div className="bg-blue-600/40 p-6 rounded-xl backdrop-blur-sm">
+          <div className="bg-blue-600/20 backdrop-blur-md p-6 rounded-xl shadow-lg">
             <div className="bg-[#8EFF8B]/20 w-24 h-24 rounded-xl flex items-center justify-center mb-6 mx-auto">
               <CreditCard className="text-[#8EFF8B]" size={48} />
             </div>
@@ -67,7 +67,7 @@ const Benefits = () => {
           </div>
           
           {/* Benefit 2 */}
-          <div className="bg-blue-600/40 p-6 rounded-xl backdrop-blur-sm">
+          <div className="bg-blue-600/20 backdrop-blur-md p-6 rounded-xl shadow-lg">
             <div className="bg-[#8EFF8B]/20 w-24 h-24 rounded-xl flex items-center justify-center mb-6 mx-auto">
               <DollarSign className="text-[#8EFF8B]" size={48} />
             </div>
@@ -80,7 +80,7 @@ const Benefits = () => {
           </div>
           
           {/* Benefit 3 */}
-          <div className="bg-blue-600/40 p-6 rounded-xl backdrop-blur-sm">
+          <div className="bg-blue-600/20 backdrop-blur-md p-6 rounded-xl shadow-lg">
             <div className="bg-[#8EFF8B]/20 w-24 h-24 rounded-xl flex items-center justify-center mb-6 mx-auto">
               <Receipt className="text-[#8EFF8B]" size={48} />
             </div>
