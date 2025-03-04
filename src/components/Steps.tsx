@@ -78,6 +78,15 @@ const Steps = () => {
         </svg>
       </div>
       
+      {/* 3D element below step 4 (positioned after row 1 and 2) */}
+      <div className="absolute right-0 md:right-[10%] top-[55%] transform rotate-12 w-[200px] md:w-[300px] animate-float z-0 opacity-80">
+        <img 
+          src="/lovable-uploads/6b345a41-345b-45d8-8492-c846ac424a48.png" 
+          alt="3D flowing ribbons" 
+          className="w-full h-auto"
+        />
+      </div>
+      
       <div className="container mx-auto px-4">
         <div 
           ref={titleRef}
@@ -90,7 +99,7 @@ const Steps = () => {
         
         <div 
           ref={stepsRef}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto slide-up"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto slide-up relative z-10"
           style={{ animationDelay: '0.3s' }}
         >
           {steps.map((step, index) => (
