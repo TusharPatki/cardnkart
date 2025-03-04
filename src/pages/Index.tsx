@@ -49,7 +49,7 @@ const Index = () => {
           const element = document.querySelector(href);
           if (element) {
             window.scrollTo({
-              top: element.getBoundingClientRect().top + window.scrollY - 80,
+              top: element.getBoundingClientRect().top + window.scrollY - 100,
               behavior: 'smooth'
             });
           }
@@ -62,7 +62,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen overflow-hidden">
+    <div className="min-h-screen overflow-hidden pt-24">
       <Navbar />
       <Hero />
       <Benefits />
