@@ -67,14 +67,14 @@ const Hero = () => {
           <Download className="ml-2" size={20} />
         </button>
         
-        {/* Phone Mockup - Replacing with the new image */}
+        {/* Phone Mockup - Updated with new image */}
         <div 
           ref={phoneRef}
           className="w-full max-w-md md:max-w-lg mt-6 fade-in"
           style={{ animationDelay: '0.6s' }}
         >
           <img 
-            src="/lovable-uploads/cdc753dd-75c1-44a3-b3f8-967356eb87f4.png" 
+            src="/lovable-uploads/a2fcc59f-9a9c-4d30-984a-85837e586d09.png" 
             alt="Shopping App Mockup" 
             className="w-full h-auto rounded-3xl shadow-2xl"
           />
