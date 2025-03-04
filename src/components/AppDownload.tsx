@@ -87,14 +87,11 @@ const AppDownload = () => {
             style={{ animationDelay: '0.4s' }}
           >
             <div className="relative w-56">
-              <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-blue-400/5 rounded-3xl transform scale-105 blur-lg"></div>
-              <div className="bg-cardnbg-darkBlue rounded-3xl overflow-hidden shadow-2xl">
-                <div className="flex justify-center py-8">
-                  <div className="bg-cardnbg-darkBlue p-3 rounded-md">
-                    <span className="text-white font-bold text-2xl">C</span>
-                  </div>
-                </div>
-              </div>
+              <img 
+                src="/lovable-uploads/6e354986-6d42-4a31-b08e-a03dabd69774.png" 
+                alt="CardnCart App" 
+                className="w-full h-auto rounded-3xl shadow-2xl"
+              />
             </div>
           </div>
         </div>
