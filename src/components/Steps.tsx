@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 import { Smartphone, ShoppingCart, CreditCard, DollarSign, CheckCircle } from 'lucide-react';
 
@@ -58,7 +59,7 @@ const Steps = () => {
     <section id="how-it-works" className="py-20 bg-cardnbg-blue text-white relative overflow-hidden">
       {/* Decorative 3D elements */}
       <div className="absolute top-10 right-10 opacity-70">
-        <img src="/lovable-uploads/95d1af77-c828-4ab1-8726-a9e307856e98.png" alt="" className="w-32 h-32" />
+        {/* Removed image */}
       </div>
       <div className="absolute bottom-0 left-0 opacity-50">
         <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
