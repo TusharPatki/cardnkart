@@ -9,9 +9,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start border-b border-blue-800/30 pb-8 mb-8">
           <div className="mb-8 md:mb-0">
             <Link to="/" className="flex items-center mb-4 justify-center md:justify-start">
-              <div className="bg-cardnbg-blue p-2 rounded-md mr-2">
-                <span className="text-white font-bold text-lg">C</span>
-              </div>
+              <img 
+                src="/lovable-uploads/153c948c-2177-4cac-a799-c5fe86bd8080.png" 
+                alt="CardnCart Logo" 
+                className="h-10 mr-2"
+              />
               <span className="font-display font-bold text-xl tracking-tight">
                 Card<span className="text-cardnbg-blue">n</span>Cart
               </span>
