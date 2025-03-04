@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { Smartphone, ShoppingCart, CreditCard, DollarSign, CheckCircle } from 'lucide-react';
 
@@ -96,20 +95,9 @@ const Steps = () => {
               
               <div className="flex items-end justify-between">
                 <div className="text-[#8EFF8B] font-bold text-xl">STEP</div>
-                {index === 5 - 1 && index === steps.length - 1 ? (
-                  // Phone image for the last step
-                  <div className="absolute bottom-0 right-0 p-2">
-                    <img 
-                      src="/lovable-uploads/f3eee27c-4ec4-44ad-92ee-2daa3c088a80.png" 
-                      alt="Mobile app" 
-                      className="w-32 h-auto object-contain"
-                    />
-                  </div>
-                ) : (
-                  <div className="text-white font-display text-[120px] leading-none font-bold opacity-90">
-                    {step.number}
-                  </div>
-                )}
+                <div className="text-white font-display text-[120px] leading-none font-bold opacity-90">
+                  {step.number}
+                </div>
               </div>
             </div>
           ))}
