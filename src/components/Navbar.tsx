@@ -28,9 +28,11 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <a href="/" className="flex items-center">
-            <div className="bg-cardnbg-darkBlue p-2 rounded-md mr-2">
-              <span className="text-white font-bold text-lg">C</span>
-            </div>
+            <img 
+              src="/lovable-uploads/3248742e-eb10-43d5-9e6d-3a15cde35013.png" 
+              alt="CardnCart Logo" 
+              className="h-10 w-auto mr-2" 
+            />
             <span className="font-display font-bold text-xl tracking-tight">
               Card<span className="text-cardnbg-blue">n</span>Cart
             </span>
