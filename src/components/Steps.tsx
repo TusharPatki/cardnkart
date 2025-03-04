@@ -1,6 +1,6 @@
 
 import { useEffect, useRef } from 'react';
-import { Smartphone, ShoppingCart, CreditCard, DollarSign, CheckCircle } from 'lucide-react';
+import { Smartphone, ShoppingCart, CreditCard, DollarSign, CheckCircle, Package } from 'lucide-react';
 
 const Steps = () => {
   const titleRef = useRef<HTMLDivElement>(null);
@@ -52,7 +52,12 @@ const Steps = () => {
       number: 5,
       title: "Enjoy Savings as the cardholder completes the payment, securing your order.",
       icon: <CheckCircle className="text-cardnbg-yellow" size={24} />
-    }
+    },
+    {
+      number: 6,
+      title: "Track Your Order and Receive Updates directly in the CardnCart app.",
+      icon: <Package className="text-cardnbg-yellow" size={24} />
+    },
   ];
 
   return (
@@ -73,6 +78,15 @@ const Steps = () => {
         </svg>
       </div>
       
+      {/* 3D element below step 4 (positioned after row 1 and 2) */}
+      <div className="absolute right-0 md:right-[10%] top-[55%] transform rotate-12 w-[200px] md:w-[300px] animate-float z-0 opacity-80">
+        <img 
+          src="/lovable-uploads/6b345a41-345b-45d8-8492-c846ac424a48.png" 
+          alt="3D flowing ribbons" 
+          className="w-full h-auto"
+        />
+      </div>
+      
       <div className="container mx-auto px-4">
         <div 
           ref={titleRef}
@@ -85,12 +99,12 @@ const Steps = () => {
         
         <div 
           ref={stepsRef}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto slide-up"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto slide-up relative z-10"
           style={{ animationDelay: '0.3s' }}
         >
           {steps.map((step, index) => (
             <div key={index} className="relative bg-[#0A1232] p-8 rounded-2xl h-[250px] flex flex-col justify-between">
-              {index === 4 && (
+              {index === 5 && (
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                   <img 
                     src="/lovable-uploads/c4dcbe59-2aa8-46f4-8bd4-b81257aa3224.png" 
@@ -100,44 +114,20 @@ const Steps = () => {
                 </div>
               )}
               
-              <div className={`mb-auto ${index === 4 ? 'z-10 relative' : ''}`}>
-                <p className={`${index === 4 ? 'text-transparent' : 'text-white'} text-sm md:text-base font-medium`}>
+              <div className={`mb-auto ${index === 5 ? 'z-10 relative' : ''}`}>
+                <p className={`${index === 5 ? 'text-transparent' : 'text-white'} text-sm md:text-base font-medium`}>
                   {step.title}
                 </p>
               </div>
               
-              <div className={`flex items-end justify-between ${index === 4 ? 'z-10 relative' : ''}`}>
-                <div className={`${index === 4 ? 'text-transparent' : 'text-[#8EFF8B]'} font-bold text-xl`}>STEP</div>
-                <div className={`${index === 4 ? 'text-white opacity-30' : 'text-white opacity-90'} font-display text-[120px] leading-none font-bold`}>
+              <div className={`flex items-end justify-between ${index === 5 ? 'z-10 relative' : ''}`}>
+                <div className={`${index === 5 ? 'text-transparent' : 'text-[#8EFF8B]'} font-bold text-xl`}>STEP</div>
+                <div className={`${index === 5 ? 'text-white opacity-30' : 'text-white opacity-90'} font-display text-[120px] leading-none font-bold`}>
                   {step.number}
                 </div>
               </div>
             </div>
           ))}
-          
-          {/* Empty div similar to step 5 without content */}
-          <div className="relative bg-[#0A1232] p-8 rounded-2xl h-[250px] flex flex-col justify-between">
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <img 
-                src="/lovable-uploads/c4dcbe59-2aa8-46f4-8bd4-b81257aa3224.png" 
-                alt="CardnCart App Interface" 
-                className="w-full h-full object-cover rounded-2xl opacity-90"
-              />
-            </div>
-            
-            <div className="mb-auto z-10 relative">
-              <p className="text-transparent text-sm md:text-base font-medium">
-                &nbsp;
-              </p>
-            </div>
-            
-            <div className="flex items-end justify-between z-10 relative">
-              <div className="text-transparent font-bold text-xl">STEP</div>
-              <div className="text-white opacity-30 font-display text-[120px] leading-none font-bold">
-                &nbsp;
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
