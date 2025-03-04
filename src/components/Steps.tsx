@@ -56,7 +56,7 @@ const Steps = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-20 bg-cardnbg-blue text-white relative overflow-hidden">
+    <section id="how-it-works" className="py-20 bg-blue-600 text-white relative overflow-hidden">
       {/* Decorative 3D elements */}
       <div className="absolute top-10 right-10 opacity-70">
         {/* Removed image */}

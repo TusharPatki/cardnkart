@@ -35,7 +35,7 @@ const Benefits = () => {
     <section 
       id="benefits" 
       ref={sectionRef}
-      className="py-16 bg-[#2549E8] text-white relative overflow-hidden rounded-3xl max-w-6xl mx-auto my-16 px-6 md:px-10"
+      className="py-16 bg-blue-600 text-white relative overflow-hidden rounded-3xl max-w-6xl mx-auto my-16 px-6 md:px-10"
     >
       {/* Border effect */}
       <div className="absolute inset-0 border-2 border-[#8EFF8B] rounded-3xl opacity-50"></div>

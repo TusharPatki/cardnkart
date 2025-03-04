@@ -31,7 +31,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="bg-[#2549E8] overflow-hidden min-h-screen flex flex-col items-center justify-center py-10 px-4 relative">
+    <section className="bg-blue-600 overflow-hidden min-h-screen flex flex-col items-center justify-center py-10 px-4 relative">
       {/* Background Design Elements removed */}
       
       <div className="container mx-auto flex flex-col items-center text-center z-10 max-w-5xl">
