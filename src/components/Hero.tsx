@@ -6,6 +6,7 @@ const Hero = () => {
   const headingRef = useRef<HTMLHeadingElement>(null);
   const subheadingRef = useRef<HTMLParagraphElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -22,11 +23,13 @@ const Hero = () => {
     if (headingRef.current) observer.observe(headingRef.current);
     if (subheadingRef.current) observer.observe(subheadingRef.current);
     if (buttonRef.current) observer.observe(buttonRef.current);
+    if (imageRef.current) observer.observe(imageRef.current);
 
     return () => {
       if (headingRef.current) observer.unobserve(headingRef.current);
       if (subheadingRef.current) observer.unobserve(subheadingRef.current);
       if (buttonRef.current) observer.unobserve(buttonRef.current);
+      if (imageRef.current) observer.unobserve(imageRef.current);
     };
   }, []);
 
@@ -57,12 +60,25 @@ const Hero = () => {
         {/* Download Button */}
         <button 
           ref={buttonRef}
-          className="bg-black text-white font-medium py-3 px-8 rounded-full flex items-center hover:bg-gray-900 transition-all transform hover:scale-105 shadow-lg slide-up"
+          className="bg-black text-white font-medium py-3 px-8 rounded-full flex items-center hover:bg-gray-900 transition-all transform hover:scale-105 shadow-lg slide-up mb-10"
           style={{ animationDelay: '0.4s' }}
         >
           <span>Download App</span>
           <Download className="ml-2" size={20} />
         </button>
+        
+        {/* App Screenshot Image */}
+        <div 
+          className="w-full max-w-lg mx-auto slide-up"
+          style={{ animationDelay: '0.6s' }}
+        >
+          <img
+            ref={imageRef}
+            src="https://s3-alpha-sig.figma.com/img/036a/2bff/c0aa9c975bcc831d45ba12d4d33c31c4?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=lWgEyWKBqGrKOBObFtYqvx5ddpXfqzdTUtWPS8DsnZX2oDPj96G2cAlhZ~p0aaBxCYrsbvJU1qLH4uKHyCvWG0991VqTROW3k89PCLDcnyhEA3hCnauy-e9ztM71hFgiJHT6Lr5M3ctBMEKmmFnfc6a9cFDPSy648ePvmtQ8Vjf795qPAKCLNRIfp3KKM9BErYjGASy35fZA8FC6AP8d~HXKye9pFpIPvbfx1sA7s7vN61Eh6d4lc-RsNEXPn3oFc3w0ENKeCVqVGfVe6cHYLrjWKqJZFYrU53lyBIVllvGkwgdc8wBou24Zj2P8~G0I4MgOvKMaHbZijCA2wOkBSA__"
+            alt="CardnCart App Screenshot"
+            className="w-full h-auto object-contain rounded-2xl shadow-xl"
+          />
+        </div>
       </div>
     </section>
   );
