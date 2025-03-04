@@ -1,5 +1,6 @@
 
 import { Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -7,14 +8,14 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start border-b border-blue-800/30 pb-8 mb-8">
           <div className="mb-8 md:mb-0">
-            <a href="/" className="flex items-center mb-4 justify-center md:justify-start">
+            <Link to="/" className="flex items-center mb-4 justify-center md:justify-start">
               <div className="bg-cardnbg-blue p-2 rounded-md mr-2">
                 <span className="text-white font-bold text-lg">C</span>
               </div>
               <span className="font-display font-bold text-xl tracking-tight">
                 Card<span className="text-cardnbg-blue">n</span>Cart
               </span>
-            </a>
+            </Link>
             <p className="text-blue-200 max-w-xs text-center md:text-left">
               Shop online without a credit card. Save big on thousands of exclusive deals.
             </p>
@@ -24,7 +25,7 @@ const Footer = () => {
             <div className="text-center md:text-left">
               <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-blue-200 hover:text-white transition-colors">About Us</a></li>
+                <li><Link to="/about-us" className="text-blue-200 hover:text-white transition-colors">About Us</Link></li>
                 <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Careers</a></li>
               </ul>
             </div>
@@ -33,9 +34,9 @@ const Footer = () => {
               <h4 className="font-semibold mb-4">Support</h4>
               <ul className="space-y-2">
                 <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Help Center</a></li>
-                <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Contact Us</a></li>
-                <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Terms of Service</a></li>
+                <li><Link to="/contact-us" className="text-blue-200 hover:text-white transition-colors">Contact Us</Link></li>
+                <li><Link to="/privacy-policy" className="text-blue-200 hover:text-white transition-colors">Privacy Policy</Link></li>
+                <li><Link to="/terms-of-service" className="text-blue-200 hover:text-white transition-colors">Terms of Service</Link></li>
               </ul>
             </div>
             

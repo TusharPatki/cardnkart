@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,7 +28,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 py-4 pb-6">
         <div className="flex items-center justify-between">
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img 
               src="/lovable-uploads/3248742e-eb10-43d5-9e6d-3a15cde35013.png" 
               alt="CardnCart Logo" 
@@ -36,7 +37,7 @@ const Navbar = () => {
             <span className="font-display font-bold text-xl tracking-tight">
               Card<span className="text-cardnbg-blue">n</span>Cart
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -44,6 +45,7 @@ const Navbar = () => {
             <a href="#how-it-works" className="font-medium hover:text-cardnbg-blue transition-colors">How It Works</a>
             <a href="#testimonials" className="font-medium hover:text-cardnbg-blue transition-colors">Testimonials</a>
             <a href="#faq" className="font-medium hover:text-cardnbg-blue transition-colors">FAQ</a>
+            <Link to="/about-us" className="font-medium hover:text-cardnbg-blue transition-colors">About Us</Link>
             <button className="bg-cardnbg-blue hover:bg-blue-600 text-white font-medium py-2 px-6 rounded-full transition-all transform hover:scale-105">
               Get Started
             </button>
@@ -91,6 +93,13 @@ const Navbar = () => {
             >
               FAQ
             </a>
+            <Link 
+              to="/about-us" 
+              className="font-medium hover:text-cardnbg-blue transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About Us
+            </Link>
             <button 
               className="bg-cardnbg-blue hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-full transition-all w-full"
               onClick={() => setIsMenuOpen(false)}
