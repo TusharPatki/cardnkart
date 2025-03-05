@@ -1,4 +1,3 @@
-
 import { Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -14,9 +13,6 @@ const Footer = () => {
                 alt="CardnCart Logo" 
                 className="h-10 mr-2"
               />
-              <span className="font-display font-bold text-xl tracking-tight">
-                Card<span className="text-cardnbg-blue">n</span>Cart
-              </span>
             </Link>
             <p className="text-blue-200 max-w-xs text-center md:text-left">
               Shop online without a credit card. Save big on thousands of exclusive deals.
