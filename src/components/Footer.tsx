@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="mb-8 md:mb-0">
             <Link to="/" className="flex items-center mb-4 justify-center md:justify-start">
               <img 
-                src="/lovable-uploads/153c948c-2177-4cac-a799-c5fe86bd8080.png" 
+                src="/lovable-uploads/cc46e814-d369-4ad1-b33d-9112fb3652f4.png" 
                 alt="CardnCart Logo" 
                 className="h-10 mr-2"
               />
