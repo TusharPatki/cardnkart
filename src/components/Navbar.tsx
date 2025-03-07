@@ -45,7 +45,6 @@ const Navbar = () => {
             <a href="#how-it-works" className="font-medium hover:text-cardnbg-blue transition-colors">How It Works</a>
             <a href="#testimonials" className="font-medium hover:text-cardnbg-blue transition-colors">Testimonials</a>
             <a href="#faq" className="font-medium hover:text-cardnbg-blue transition-colors">FAQ</a>
-            <Link to="/about-us" className="font-medium hover:text-cardnbg-blue transition-colors">About Us</Link>
             <button className="bg-cardnbg-blue hover:bg-blue-600 text-white font-medium py-2 px-6 rounded-full transition-all transform hover:scale-105">
               Get Started
             </button>

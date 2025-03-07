@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
 
@@ -8,7 +7,7 @@ type FAQItem = {
 };
 
 const FAQ = () => {
-  const [openItems, setOpenItems] = useState<number[]>([]);
+  const [openItems, setOpenItems] = useState<number[]>([0]); // Start with the first item open
   const titleRef = useRef<HTMLDivElement>(null);
   const faqsRef = useRef<HTMLDivElement>(null);
 
@@ -43,36 +42,35 @@ const FAQ = () => {
 
   const faqs: FAQItem[] = [
     {
-      question: "How do I get started with CardnCart?",
-      answer: "Getting started is easy! Simply download our app from the App Store or Google Play, create an account, and start browsing exclusive deals. No credit card required to sign up."
+      question: "Can I use a different card than the one shown?",
+      answer: "Note - Yes, you can. however, then we would request you to please check before placing the order that you're fine with amount you're receiving from yaper any further complaint won't be considered for adjustments."
     },
     {
-      question: "Are there any membership fees?",
-      answer: "CardnCart offers both free and premium membership tiers. The free tier gives you access to many great deals, while our premium membership unlocks additional benefits and higher discount percentages for a small monthly fee."
+      question: "Why is PAN required?",
+      answer: "PAN is required for verification purposes and to comply with financial regulations. It helps us ensure secure transactions and prevents fraud."
     },
     {
-      question: "What payment methods are accepted?",
-      answer: "We accept various payment methods including debit cards, PayPal, Apple Pay, Google Pay, and many local payment options depending on your country. You don't need a traditional credit card to shop with CardnCart."
+      question: "How to use Yaper?",
+      answer: "To use Yaper, simply sign up, link your bank account or card, and start making payments. You can also use Yaper to receive money, track expenses, and manage your finances."
     },
     {
-      question: "How do the discounts work?",
-      answer: "Our discounts are applied automatically at checkout when you shop through our app or browser extension. The discount amounts vary depending on the retailer and your membership tier."
+      question: "How can I trust Yaper?",
+      answer: "Yaper uses bank-level encryption to protect your data and transactions. We're also compliant with all financial regulations and have a dedicated customer support team to address any concerns."
     },
     {
-      question: "Is my personal information secure?",
-      answer: "Absolutely! We use bank-level encryption and security protocols to ensure your personal and payment information remains secure. We never store your full payment details on our servers."
+      question: "Why is TDS deducted?",
+      answer: "TDS (Tax Deducted at Source) is deducted as per government regulations. It's a form of collecting tax at the source of income, which is required by law for certain transactions."
     }
   ];
 
   return (
-    <section id="faq" className="py-20 bg-cardnbg-darkBlue text-white">
+    <section id="faq" className="py-20 bg-[#00084d] text-white">
       <div className="container mx-auto px-4">
         <div 
           ref={titleRef}
           className="text-center mb-16 slide-up"
         >
-          <h2 className="text-blue-200 font-medium text-lg mb-3">Learn More</h2>
-          <h3 className="font-display font-bold text-3xl md:text-4xl">Frequently Asked Questions</h3>
+          <h2 className="font-bold text-3xl md:text-4xl">Frequently Asked Questions</h2>
         </div>
         
         <div 
@@ -83,24 +81,30 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <div 
               key={index} 
-              className="mb-4 bg-white/5 rounded-lg overflow-hidden border border-blue-900/30"
+              className="mb-4 bg-white rounded-lg overflow-hidden"
             >
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full flex items-center justify-between p-5 text-left transition-colors hover:bg-blue-900/20"
+                className="w-full flex items-center justify-between p-5 text-left transition-colors bg-white text-black relative"
+                aria-expanded={openItems.includes(index)}
               >
-                <span className="font-semibold text-white">{faq.question}</span>
-                <ChevronDown 
-                  className={`transition-transform duration-300 ${openItems.includes(index) ? 'transform rotate-180' : ''}`} 
-                  size={20} 
-                />
+                <span className="font-bold text-black">{faq.question}</span>
+                <div className={`w-8 h-8 rounded-full bg-[#00084d] flex items-center justify-center`}>
+                  <ChevronDown 
+                    className={`transition-transform duration-300 ${
+                      openItems.includes(index) ? 'transform rotate-180' : ''
+                    }`} 
+                    size={18}
+                    color="white"
+                  />
+                </div>
               </button>
               <div 
-                className={`overflow-hidden transition-all duration-300 ${
+                className={`bg-white text-gray-600 overflow-hidden transition-all duration-300 ${
                   openItems.includes(index) ? 'max-h-96 px-5 pb-5' : 'max-h-0'
                 }`}
               >
-                <p className="text-blue-200">{faq.answer}</p>
+                <p className="text-gray-600 text-sm">{faq.answer}</p>
               </div>
             </div>
           ))}

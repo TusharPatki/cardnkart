@@ -11,12 +11,9 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/cc46e814-d369-4ad1-b33d-9112fb3652f4.png" 
                 alt="CardnCart Logo" 
-                className="h-10 mr-2"
+                className="h-22 mr-2"
               />
             </Link>
-            <p className="text-blue-200 max-w-xs text-center md:text-left">
-              Shop online without a credit card. Save big on thousands of exclusive deals.
-            </p>
           </div>
           
           <div className="grid grid-cols-2 gap-8">
