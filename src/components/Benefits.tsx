@@ -57,7 +57,7 @@ const Benefits = () => {
           <div className="bg-blue-500/50 p-6 rounded-xl">
             <div className="bg-green-400/20 w-40 h-40 rounded-xl flex items-center justify-center mb-6 mx-auto">
               <img 
-                src="public/lovable-uploads/asset-1_360.png" 
+                src="lovable-uploads/asset-1_360.png" 
                 alt="Instant Access" 
                 className="w-20 h-20 object-contain"
               />
@@ -74,7 +74,7 @@ const Benefits = () => {
           <div className="bg-blue-500/50 p-6 rounded-xl">
             <div className="bg-green-400/20 w-40 h-40 rounded-xl flex items-center justify-center mb-6 mx-auto">
               <img 
-                src="public/lovable-uploads/asset-2.png" 
+                src="lovable-uploads/asset-2.png" 
                 alt="Exclusive Savings" 
                 className="w-20 h-20 object-contain"
               />
@@ -91,7 +91,7 @@ const Benefits = () => {
           <div className="bg-blue-500/50 p-6 rounded-xl">
             <div className="bg-green-400/20 w-40 h-40 rounded-xl flex items-center justify-center mb-6 mx-auto">
               <img 
-                src="public/lovable-uploads/asset-3.png" 
+                src="lovable-uploads/asset-3.png" 
                 alt="Shop Without Limits" 
                 className="w-20 h-20 object-contain"
               />

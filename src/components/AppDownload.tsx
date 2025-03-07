@@ -39,7 +39,7 @@ const AppDownload = () => {
           {/* 3D ring element positioned to extend outside the left side of blue container */}
           <div className="absolute top-[-5%] -left-4 md:-left-8 z-10">
             <img 
-              src="public/lovable-uploads/3400.png" 
+              src="lovable-uploads/3400.png" 
               alt="3D Ring" 
               className="w-56 h-56 md:w-72 md:h-72 object-contain"
             />
@@ -75,7 +75,7 @@ const AppDownload = () => {
               >
                 <div className="relative translate-y-[1%] w-56 md:w-72">
                   <img 
-                    src="public/lovable-uploads/6e354986-6d42-4a31-b08e-a03dabd69774.png" 
+                    src="lovable-uploads/6e354986-6d42-4a31-b08e-a03dabd69774.png" 
                     alt="CardnCart App" 
                     className="w-full h-auto rounded-3xl"
                   />
