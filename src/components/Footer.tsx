@@ -44,7 +44,7 @@ const Footer = () => {
             <a href="https://www.linkedin.com/company/cardncart/?viewAsMember=true" className="text-blue-200 hover:text-white transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href="https://x.com/CartnCart" className="text-blue-200 hover:text-white transition-colors">
+            <a href="https://x.com/CartnCart_" className="text-blue-200 hover:text-white transition-colors">
               <Twitter size={20} />
             </a>
             <a href="https://www.instagram.com/cardncart_/" className="text-blue-200 hover:text-white transition-colors">
