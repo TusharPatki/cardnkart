@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Youtube, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -41,17 +41,14 @@ const Footer = () => {
           </p>
           
           <div className="flex space-x-4">
-            <a href="#" className="text-blue-200 hover:text-white transition-colors">
-              <Facebook size={20} />
+            <a href="https://www.linkedin.com/company/cardncart/?viewAsMember=true" className="text-blue-200 hover:text-white transition-colors">
+              <Linkedin size={20} />
             </a>
-            <a href="#" className="text-blue-200 hover:text-white transition-colors">
+            <a href="https://x.com/CartnCart" className="text-blue-200 hover:text-white transition-colors">
               <Twitter size={20} />
             </a>
-            <a href="#" className="text-blue-200 hover:text-white transition-colors">
+            <a href="https://www.instagram.com/cardncart_/" className="text-blue-200 hover:text-white transition-colors">
               <Instagram size={20} />
-            </a>
-            <a href="#" className="text-blue-200 hover:text-white transition-colors">
-              <Youtube size={20} />
             </a>
           </div>
         </div>
