@@ -64,10 +64,10 @@ const ContactUs = () => {
               <div>
                 <h3 className="font-medium">Email Us</h3>
                 <p className="text-gray-600">support@cardncart.com</p>
-                <p className="text-gray-600">partnerships@cardncart.com</p>
               </div>
             </div>
             
+            {/* 
             <div className="flex items-start">
               <Phone className="mr-4 text-cardnbg-blue" />
               <div>
@@ -76,6 +76,7 @@ const ContactUs = () => {
                 <p className="text-gray-600">Business Inquiries: +1 (800) 765-4321</p>
               </div>
             </div>
+            */}
             
             <div className="flex items-start">
               <MapPin className="mr-4 text-cardnbg-blue" />
@@ -83,9 +84,9 @@ const ContactUs = () => {
                 <h3 className="font-medium">Visit Us</h3>
                 <p className="text-gray-600">
                   CardnCart Headquarters<br />
-                  123 Commerce Street<br />
-                  San Francisco, CA 94105<br />
-                  United States
+                  UG-06, India Accelerator<br />
+                  MGF Metropolis Mall, Gurgaon 122002<br />
+                  Haryana, India
                 </p>
               </div>
             </div>
@@ -94,7 +95,7 @@ const ContactUs = () => {
           <div className="mt-8">
             <h3 className="font-medium mb-4">Business Hours</h3>
             <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM PST</p>
-            <p className="text-gray-600">Saturday: 10:00 AM - 4:00 PM PST</p>
+            <p className="text-gray-600">Saturday: Closed</p>
             <p className="text-gray-600">Sunday: Closed</p>
           </div>
         </div>

@@ -12,13 +12,13 @@ const AboutUs = () => {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-4">Our Story</h2>
           <p className="mb-4">
-            Founded in 2020, CardnCart began with a simple mission: to make online shopping accessible to everyone, 
+            Founded in 2025, CardnCart began with a simple mission: to make online shopping accessible to everyone, 
             regardless of whether they have a credit card. Our founders recognized that millions of people worldwide 
             are excluded from the convenience of e-commerce due to lack of banking access or credit history.
           </p>
           <p>
             What started as a small team of three passionate innovators has now grown into a global company serving 
-            customers across 35 countries, with a dedicated team of over 100 professionals committed to revolutionizing 
+            customers across  India, with a dedicated team of over 20 professionals committed to revolutionizing 
             how people shop online.
           </p>
         </section>
@@ -47,24 +47,24 @@ const AboutUs = () => {
           <h2 className="text-2xl font-bold mb-4">Leadership Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold mb-2">Sarah Johnson</h3>
+              <h3 className="text-xl font-semibold mb-2">Vaibhav Jain</h3>
               <p className="text-gray-600 mb-2">Co-Founder & CEO</p>
-              <p>With over 15 years in fintech, Sarah leads our strategic vision and global expansion efforts.</p>
+              <p>With over 15 years in fintech, Vaibhav leads our strategic vision and global expansion efforts.</p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">Michael Chang</h3>
-              <p className="text-gray-600 mb-2">Co-Founder & CTO</p>
-              <p>Michael's expertise in payment systems and security architecture forms the backbone of our platform.</p>
+              <h3 className="text-xl font-semibold mb-2">Harshad Bhosale</h3>
+              <p className="text-gray-600 mb-2">Chief technology officer</p>
+              <p>Harshad's expertise in payment systems and security architecture forms the backbone of our platform.</p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">Elena Rodriguez</h3>
+              <h3 className="text-xl font-semibold mb-2">Tushar Patki</h3>
               <p className="text-gray-600 mb-2">Chief Operations Officer</p>
-              <p>Elena ensures that our day-to-day operations run smoothly while maintaining our commitment to quality.</p>
+              <p>Tushar ensures that our day-to-day operations run smoothly while maintaining our commitment to quality.</p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">David Okafor</h3>
+              <h3 className="text-xl font-semibold mb-2">Parveen Yadav</h3>
               <p className="text-gray-600 mb-2">Chief Product Officer</p>
-              <p>David heads our product development, focusing on creating intuitive and accessible user experiences.</p>
+              <p>Parveen heads our product development, focusing on creating intuitive and accessible user experiences.</p>
             </div>
           </div>
         </section>
