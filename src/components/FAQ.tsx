@@ -42,24 +42,24 @@ const FAQ = () => {
 
   const faqs: FAQItem[] = [
     {
-      question: "Can I use a different card than the one shown?",
-      answer: "Note - Yes, you can. however, then we would request you to please check before placing the order that you're fine with amount you're receiving from yaper any further complaint won't be considered for adjustments."
+      question: "Can I buy any product from Cardncart?",
+      answer: "**Note:** Yes, you can purchase any product available on Flipkart through our platform. We are continuously working on integrating more stores, and they will be available soon."
     },
     {
-      question: "Why is PAN required?",
-      answer: "PAN is required for verification purposes and to comply with financial regulations. It helps us ensure secure transactions and prevents fraud."
+      question: "Why is advance payment required?",
+      answer: "Advance payments do not go directly into our bank account. Instead, they are held in an escrow bank account, ensuring that funds are securely stored under the condition that the payment is released only after the product has been successfully received. This process safeguards both parties, providing assurance to the cardholder while maintaining financial security by keeping balances in advance."
     },
     {
-      question: "How to use Yaper?",
-      answer: "To use Yaper, simply sign up, link your bank account or card, and start making payments. You can also use Yaper to receive money, track expenses, and manage your finances."
+      question: "How to use Cardncart?",
+      answer: "To use our service, simply sign up, browse for the desired product, and click [Buy Now.] We will offer you the best price, and once you are satisfied, you can make the payment via our QR code. Our system will then place the order on your behalf seamlessly."
     },
     {
-      question: "How can I trust Yaper?",
-      answer: "Yaper uses bank-level encryption to protect your data and transactions. We're also compliant with all financial regulations and have a dedicated customer support team to address any concerns."
+      question: "How can I trust Cardncart?",
+      answer: "Cardncart uses escrow bank account to protect your data and transactions. We're also compliant with all financial regulations and have a dedicated customer support team to address any concerns."
     },
     {
-      question: "Why is TDS deducted?",
-      answer: "TDS (Tax Deducted at Source) is deducted as per government regulations. It's a form of collecting tax at the source of income, which is required by law for certain transactions."
+      question: "How much commission does Cardncart charge?",
+      answer: "The fee varies depending on the product but generally ranges between 2-3% of the total product value. In some cases, it may be even lower, depending on the product category or specific credit card requirements."
     }
   ];
 
