@@ -111,7 +111,7 @@ const Steps = () => {
       </div>
       
       <div className="absolute bottom-[-2%] right-[-3%] w-15 h-15">
-        <img src="lovable-uploads/image (81).png" alt="3D Wave Element" className="w-full h-full object-cover" />
+        <img src="lovable-uploads/Image (81).png" alt="3D Wave Element" className="w-full h-full object-cover" />
       </div>
     </section>
   );
