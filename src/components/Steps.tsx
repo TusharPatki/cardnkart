@@ -56,15 +56,17 @@ const Steps = () => {
 
   return (
     <section id="how-it-works" className="py-20 bg-[#1E44FF] text-white relative overflow-hidden">
-      <div className="absolute top-[-5%] right-[-2%] w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 z-10">
+      {/* Top right element - increased size by 100% and z-index */}
+      <div className="absolute top-[-5%] right-[-2%] w-42 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 lg:w- lg:h-128 z-30">
         <img src="lovable-uploads/Group 35561.png" alt="3D Arrow Element" className="w-full h-full object-contain" />
       </div>
       
-      <div className="absolute bottom-0 left-[-8%] w-100 h-100 sm:w-80 sm:h-80 md:w-100 md:h-100 lg:w-120 lg:h-120 z-0">
+      {/* Bottom left element - increased size by 100% and z-index */}
+      <div className="absolute bottom-0 left-[-8%] w-100 h-100 sm:w-80 sm:h-80 md:w-100 md:h-100 lg:w-120 lg:h-120 z-30">
         <img src="lovable-uploads/Group 35562 (1).png" alt="3D Curved Element" className="w-full h-full object-contain" />
       </div>
       
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 relative z-20">
         <div 
           ref={titleRef}
           className="text-center mb-16 slide-up"
@@ -110,7 +112,8 @@ const Steps = () => {
         </div>
       </div>
       
-      <div className="absolute bottom-[-2%] right-[-3%] w-15 h-15">
+      {/* Bottom right element - increased size by 100% and z-index */}
+      <div className="absolute bottom-[-2%] right-[-3%] w-30 h-30 z-30">
         <img src="lovable-uploads/Image (81).png" alt="3D Wave Element" className="w-full h-full object-cover" />
       </div>
     </section>
