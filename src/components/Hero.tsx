@@ -113,7 +113,7 @@ const Hero = () => {
         >
           <img
             ref={imageRef}
-            src="https://s3-alpha-sig.figma.com/img/036a/2bff/c0aa9c975bcc831d45ba12d4d33c31c4?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=lWgEyWKBqGrKOBObFtYqvx5ddpXfqzdTUtWPS8DsnZX2oDPj96G2cAlhZ~p0aaBxCYrsbvJU1qLH4uKHyCvWG0991VqTROW3k89PCLDcnyhEA3hCnauy-e9ztM71hFgiJHT6Lr5M3ctBMEKmmFnfc6a9cFDPSy648ePvmtQ8Vjf795qPAKCLNRIfp3KKM9BErYjGASy35fZA8FC6AP8d~HXKye9pFpIPvbfx1sA7s7vN61Eh6d4lc-RsNEXPn3oFc3w0ENKeCVqVGfVe6cHYLrjWKqJZFYrU53lyBIVllvGkwgdc8wBou24Zj2P8~G0I4MgOvKMaHbZijCA2wOkBSA__"
+            src="3399 2.svg"
             alt="CardnCart App Screenshot"
             className="w-full h-auto object-contain rounded-2xl shadow-xl"
           />
