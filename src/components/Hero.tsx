@@ -98,15 +98,21 @@ const Hero = () => {
           NO CREDIT CARD REQUIRED
         </p>
         
-        {/* Coming Soon Badge */}
+        {/* Download Now Button */}
         <div
           ref={buttonRef as React.RefObject<HTMLDivElement>}
           className="slide-up"
           style={{ animationDelay: '0.4s' }}
         >
-          <div className="bg-black text-white font-medium py-2 px-6 rounded-full inline-block hover:bg-gray-900 transition-all transform hover:scale-105 shadow-lg">
-            <span className="text-cardnbg-yellow font-semibold">Coming soon</span>
-          </div>
+          <a 
+            href="https://play.google.com/store/apps/details?id=com.cardncart.android&hl=en-IN" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="bg-black text-white font-medium py-3 px-6 rounded-full inline-flex items-center hover:bg-gray-900 transition-all transform hover:scale-105 shadow-lg"
+          >
+            <Download className="mr-2 h-5 w-5" />
+            <span className="text-[#8EFF8B] font-semibold">Download now</span>
+          </a>
         </div>
         
         {/* App Screenshot Image */}

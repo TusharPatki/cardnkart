@@ -5,7 +5,7 @@ interface Testimonial {
   name: string;
   location: string;
   quote: string;
-  image: string;  // Changed from avatar to image
+  image: string; 
 }
 
 const InfiniteScrollTestimonials = () => {
@@ -19,31 +19,31 @@ const InfiniteScrollTestimonials = () => {
       name: "Nupur",
       location: "Jamshedpur, Jharkhand",
       quote: "CardnCart has completely changed the way I shop online. I'm saving so much money without needing a credit card!",
-      image: "lovable-uploads/Nupur.jpg"  // Changed from avatar to image
+      image: "lovable-uploads/Nupur.jpg"  
     },
     {
       name: "Urvashi Vaidya",
       location: "Bangalore, Karnataka",
       quote: "The exclusive deals are amazing. I've saved over $500 in the past three months alone. Highly recommended!",
-      image: "lovable-uploads/urvashi.jpg"  // Changed from avatar to image
+      image: "lovable-uploads/urvashi.jpg"  
     },
     {
       name: "Jay Katyal",
       location: "Gurugram, Haryana",
       quote: "Simple to use, secure payments, and incredible customer service. CardnCart is now my go-to for all online shopping.",
-      image: "lovable-uploads/jay katyal copy.jpg"  // Changed from avatar to image
+      image: "lovable-uploads/jay katyal copy.jpg"  
     },
     {
       name: "Riya Prasad",
       location: "Indore, Madhya Pradesh",
       quote: "I was skeptical at first, but CardnCart delivered exactly what they promised. Their customer support is top-notch!",
-      image: "lovable-uploads/riya parsad.jpg"  // Changed from avatar to image
+      image: "lovable-uploads/riya parsad.jpg"  
     },
     {
       name: "Sarvaneet",
       location: "Nevada, USA",
       quote: "Getting exclusive card discounts without owning a credit card? Genius! CardnCart is a game-changer for online shoppers.",
-      image: "lovable-uploads/sarvaneet.jpg"  // Changed from avatar to image
+      image: "lovable-uploads/sarvaneet.jpg"  
     }
   ];  
 
@@ -132,7 +132,7 @@ const InfiniteScrollTestimonials = () => {
                   <p className="text-white mb-6 italic h-24 overflow-hidden text-sm">"{testimonial.quote}"</p>
                   <div className="flex items-center">
                     <img
-                      src={testimonial.image}  // Changed from avatar to image
+                      src={testimonial.image}  
                       alt={testimonial.name}
                       className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-white/30"
                     />

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Download } from 'lucide-react';
 
 const AppDownload = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -53,20 +54,25 @@ const AppDownload = () => {
                 {/* Space reserved for the 3D element that's now positioned absolutely */}
               </div>
               
-{/* Center section with text */}
-
-          <div 
-            ref={contentRef}
-            className="md:flex-1 text-white relative"
-          >
-            <div className="transform -translate-x-1/3">
-              <h2 className="font-sans font-bold text-2xl md:text-8xl mb-6">Download Now</h2>
-              
-              <div className="inline-block py-3 px-6 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20">
-                <p className="text-xl font-semibold text-yellow-300">Coming soon</p>
+              {/* Center section with text */}
+              <div 
+                ref={contentRef}
+                className="md:flex-1 text-white relative"
+              >
+                <div className="transform -translate-x-1/3">
+                  <h2 className="font-sans font-bold text-2xl md:text-8xl mb-6">Download Now</h2>
+                  
+                  <a 
+                    href="https://play.google.com/store/apps/details?id=com.cardncart.android&hl=en-IN" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center py-3 px-6 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all transform hover:scale-105"
+                  >
+                    <Download className="mr-2 h-5 w-5 text-yellow-300" />
+                    <p className="text-xl font-semibold text-yellow-300">Download Now</p>
+                  </a>
+                </div>
               </div>
-            </div>
-          </div>
               
               {/* Right section with phone - positioned to extend outside the container */}
               <div 
