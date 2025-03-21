@@ -57,12 +57,12 @@ const Steps = () => {
   return (
     <section id="how-it-works" className="py-20 bg-[#1E44FF] text-white relative overflow-hidden">
       {/* Top right element - increased size by 100% and z-index */}
-      <div className="absolute top-[-5%] right-[-2%] w-42 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 lg:w- lg:h-128 z-30">
+      <div className="absolute top-[-5%] right-[-2%] w-[25%] h-auto max-w-[300px] z-30">
         <img src="lovable-uploads/Group 35561.png" alt="3D Arrow Element" className="w-full h-full object-contain" />
       </div>
       
       {/* Bottom left element - increased size by 100% and z-index */}
-      <div className="absolute bottom-0 left-[-8%] w-100 h-100 sm:w-80 sm:h-80 md:w-100 md:h-100 lg:w-120 lg:h-120 z-30">
+      <div className="absolute bottom-0 left-[-5%] w-100 h-100 sm:w-80 sm:h-80 md:w-100 md:h-100 lg:w-120 lg:h-120 z-10 md:z-30">
         <img src="lovable-uploads/Group 35562 (1).png" alt="3D Curved Element" className="w-full h-full object-contain" />
       </div>
       

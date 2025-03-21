@@ -29,37 +29,33 @@ const Benefits = () => {
   }, []);
 
   return (
-    <div className="bg-[#1E44FF] py-16 relative">
-      {/* Glass container positioned behind the main section - full size */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="max-w-8xl w-full h-full rounded-3xl border-2 border-green-400/30 bg-blue-400/10 backdrop-blur-sm scale-105 z-0"></div>
-      </div>
-      
-      {/* Main section containing all benefits */}
+    <div className="bg-[#1E44FF] py-8 px-8">
+      {/* Main section containing all benefits - now with visible border */}
       <section 
         id="benefits" 
         ref={sectionRef}
-        className="py-16 text-white relative overflow-hidden max-w-6xl mx-auto my-0 px-6 md:px-10 z-10 rounded-3xl border-2 border-green-400"
+        className="py-12 text-white relative overflow-hidden max-w-6xl mx-auto px-6 md:px-10 z-10 rounded-xl border-2 border-green-400 aspect-square md:aspect-auto"
       >
         <div ref={headerRef} className="slide-up">
           <h2 className="font-display font-bold text-4xl md:text-5xl mb-4">Dear Shoppers</h2>
-          <p className="text-xl md:text-2xl mb-16 max-w-2xl opacity-90">
+          <p className="text-xl md:text-2xl mb-10 max-w-2xl opacity-90">
             No credit card? No problem! Get the best e-commerce deals effortlessly.
           </p>
         </div>
         
         <div 
           ref={cardsRef}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 slide-up"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 slide-up"
           style={{ animationDelay: '0.3s' }}
         >
           {/* Benefit 1 */}
-          <div className="bg-blue-500/50 p-6 rounded-xl">
-            <div className="bg-green-400/20 w-40 h-40 rounded-xl flex items-center justify-center mb-6 mx-auto">
+          <div className="bg-blue-600/50 p-4 rounded-xl">
+            {/* Glass effect applied to image container only */}
+            <div className="bg-blue-400/10 backdrop-blur-sm w-32 h-32 md:w-36 md:h-36 rounded-xl flex items-center justify-center mb-6 mx-auto border border-green-400/30">
               <img 
                 src="lovable-uploads/asset-1_360.png" 
                 alt="Instant Access" 
-                className="w-20 h-20 object-contain"
+                className="w-16 h-16 object-contain"
               />
             </div>
             <h4 className="font-display font-semibold text-xl text-green-400 mb-3 text-center">
@@ -71,12 +67,13 @@ const Benefits = () => {
           </div>
           
           {/* Benefit 2 */}
-          <div className="bg-blue-500/50 p-6 rounded-xl">
-            <div className="bg-green-400/20 w-40 h-40 rounded-xl flex items-center justify-center mb-6 mx-auto">
+          <div className="bg-blue-600/50 p-4 rounded-xl">
+            {/* Glass effect applied to image container only */}
+            <div className="bg-blue-400/10 backdrop-blur-sm w-32 h-32 md:w-36 md:h-36 rounded-xl flex items-center justify-center mb-6 mx-auto border border-green-400/30">
               <img 
                 src="lovable-uploads/asset-2.png" 
                 alt="Exclusive Savings" 
-                className="w-20 h-20 object-contain"
+                className="w-16 h-16 object-contain"
               />
             </div>
             <h4 className="font-display font-semibold text-xl text-green-400 mb-3 text-center">
@@ -88,12 +85,13 @@ const Benefits = () => {
           </div>
           
           {/* Benefit 3 */}
-          <div className="bg-blue-500/50 p-6 rounded-xl">
-            <div className="bg-green-400/20 w-40 h-40 rounded-xl flex items-center justify-center mb-6 mx-auto">
+          <div className="bg-blue-600/50 p-4 rounded-xl">
+            {/* Glass effect applied to image container only */}
+            <div className="bg-blue-400/10 backdrop-blur-sm w-32 h-32 md:w-36 md:h-36 rounded-xl flex items-center justify-center mb-6 mx-auto border border-green-400/30">
               <img 
                 src="lovable-uploads/asset-3.png" 
                 alt="Shop Without Limits" 
-                className="w-20 h-20 object-contain"
+                className="w-16 h-16 object-contain"
               />
             </div>
             <h4 className="font-display font-semibold text-xl text-green-400 mb-3 text-center">
